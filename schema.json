@@ -127,12 +127,9 @@
          "constraints":{
              "required":true,
              "enum":[
-                 "Location",
-                 "Location-Vente",
-                 "Crédit-bail de véhicules",
+                 "Location, Location-Vente et/ou Crédit-bail de véhicules",
                  "Plateforme de livraisons",
-                 "Centrale de réservation de taxi",
-                 "Centrale de réservation de VTC"
+                 "Centrale de réservation de taxi ou de VTC"
              ]
          }
      },
@@ -157,7 +154,7 @@
       },
       {
          "name": "pcentLDVFE",
-         "description": "Part de véhicules à faibles émissions dans le renouvellement des flottes de véhicules de PTAC inférieur ou égal à 3,5 tonnes (VP+VUL). \n - Pour les entreprises de location, de location-vente, de crédit-bail de véhicules : correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbVPclean, nbN1infclean et nbN1supclean sur la somme des valeurs des champs nbVP et nbN1 (la prise en compte des champs nbN1supclean et nbN1sup n'est obligatoire qu'à partir du 1er janvier 2024.) \n - Pour les centrales de réservation de taxi ou VTC :  Correspond au quotient rapporté sur 100 de la valeur du champ nbVPclean sur la valeur du champ nbVP \n - Pour les plateformes : champ non requis",
+         "description": "Part de véhicules à faibles émissions dans le renouvellement des flottes de véhicules de PTAC inférieur ou égal à 3,5 tonnes (VP+VUL). \n Pour les entreprises de location, de location-vente, de crédit-bail de véhicules : correspond au quotient rapporté sur 100 de la somme des valeurs des champs nbVPclean, nbN1infclean et nbN1supclean sur la somme des valeurs des champs nbVP et nbN1 (la prise en compte des champs nbN1supclean et nbN1sup n'est obligatoire qu'à partir du 1er janvier 2024.). \n Pour les centrales de réservation de taxi ou VTC :  Correspond au quotient rapporté sur 100 de la valeur du champ nbVPclean sur la valeur du champ nbVP. \n Pour les plateformes : champ non requis",
          "example": "12.2",
          "type": "number",
          "constraints": {
