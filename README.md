@@ -1,64 +1,35 @@
-# Template de départ pour Table Schema
+# Part des véhicules à faibles émissions dans le renouvellement des parcs d’entreprises de location, location-vente, de crédit-bail de véhicules, des plateformes de livraisons et des centrales de réservation de taxi et VTC
 
-Ce dépôt contient les fichiers nécessaires pour démarrer la création d'un dépôt pour un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+Spécification du fichier d’échange relatif aux parts de véhicules à faibles émissions dans les parcs de véhicules des entreprises de location, location-vente et crédit-bail de véhicules, des plateformes de livraison, des centrales de réservation de taxi et de VTC.
 
-## Utiliser ce template
+## Contexte
 
-- Si vous créez votre dépôt sur GitHub, il vous suffit d'appuyer sur le bouton vert "Use this template". Consultez [la documentation](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) pour plus d'infos ;
-- Si votre projet sera hébergé ailleurs (par exemple Gitlab), vous pouvez cloner ce répertoire ou télécharger les fichiers correspondants. Utilisez le bouton "Clone or download".
+L’article L. 224-10 du code de l’environnement soumet les entreprises qui gèrent un parc de plus de 100 véhicules automobiles (y compris les entreprises de location, location-vente et crédit-bail) à une obligation d’incorporation de véhicules à faibles émissions et de de véhicules à très faibles émissions lors du renouvellement de cette flotte. 
+L’article L. 224-11 du code de l’environnement soumet les centrales de réservation des taxis et des VTC qui mettent en relation un nombre de conducteurs supérieur 100 à l’obligation d’utiliser une part croissante de véhicules à faibles émissions pour cette mise en relation.  
 
-## Fichiers disponibles
+L’article L. 224-11-1 du code de l’environnement soumet les plateformes de livraison qui mettent en relation plus de 50 travailleurs à l'obligation de s’assurer qu’une part croissante de véhicules à faibles émissions ou de vélos est utilisée pour cette mise en relation.
 
-Ce dépôt contient un ensemble de fichiers utiles pour un dépôt d'un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+Afin de réaliser un suivi national, l’article L. 224-12 du code de l’environnement fixe une obligation de publication de ces parts de véhicules à faibles émissions mise en relation durant l’année précédente. Par dérogation aux obligations de rapportage classiques des entreprises et de la commande publique (voir [ici](https://schema.data.gouv.fr/etalab/schema-vehicules-faibles-emissions-renouvellement-parc/latest.html)), les entreprises de location, location-vente et crédit-bail de véhicules, les centrales de réservation de taxi et de VTC, les plateformes de livraison ne doivent transmettre que les informations relatives à l’identité des personnes morales et les parts de véhicules à faibles émissions incorporés au parc au cours de l’année N-1, et non les données brutes (nombre de véhicules à faibles émissions, nombre de véhicules dans la flotte…). En revanche, l’intégralité des données fixées par arrêtés (voir ci-dessous "Documents de cadrage juridique") doivent impérativement être transmises par mail aux services en charges du suivi selon les modalités prévues (voir la section « obligation de rapportage » sur cette page : https://www.ecologie.gouv.fr/developper-lautomobile-propre-et-voitures-electriques).
 
-- [`CHANGELOG.md`](CHANGELOG.md) contient la liste des changements entre les différentes versions de votre schéma ;
-- [`exemple-valide.csv`](exemple-valide.csv) est un fichier CSV d'exemple conforme par rapport au schéma décrit dans `schema.json`  ;
-- [`LICENSE.md`](LICENSE.md) est le fichier de licence du dépôt. Nous recommandons d'utiliser la [Licence Ouverte](https://www.etalab.gouv.fr/licence-ouverte-open-licence), cette licence est recommandée par l'administration française pour le partage de données et de documents ;
-- [`README.md`](README.md) est le fichier que vous lisez actuellement. À terme, il devra présenter votre schéma ;
-- [`requirements.txt`](requirements.txt) liste les dépendances Python nécessaires pour effectuer des tests en intégration continue sur votre dépôt ;
-- [`schema.json`](schema.json) est le schéma au format Table Schema.
+## Documents de cadrage juridique
 
-### Intégration continue
+•	[Décret n° 2021-1600 du 9 décembre 2021 pris pour l'application des articles L. 224-11 et L. 224-12 du code de l'environnement en ce qui concerne les centrales de réservation mentionnées à l'article L. 3142-1 du code des transports](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044464309)
+•	[Arrêté du 9 décembre 2021 fixant les termes et modalités de publication du pourcentage de véhicules à faibles émissions parmi les véhicules mis en relation par les centrales de réservation](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000044464353/2022-03-01/)
+•	[Décret n° 2020-1726 du 29 décembre 2020 relatif au suivi et à la publication du pourcentage de véhicules à faibles et à très faibles émissions parmi les véhicules ayant fait l’objet d’un renouvellement de parc conformément aux dispositions applicables à certaines personnes, pris pour l’application de l’article 79 de la loi no 2019-1428 du 24 décembre 2019 d’orientation des mobilités](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000042754268)
+•	[Arrêté du 29 décembre 2020 fixant les termes et modalités de publication du pourcentage de véhicules à faibles et à très faibles émissions parmi les véhicules intégrés dans un renouvellement de parc, modifié par l’arrêté du 28 avril 2021.](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000042754492/2021-09-16/)
+•	[Décret n° 2022-474 du 4 avril 2022 pris pour l'application de l'article 114 de la loi n° 2021-1104 du 22 août 2021 portant lutte contre le dérèglement climatique et renforcement de la résilience face à ses effets](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045470632)
+•	[Arrêté du 5 avril 2022 fixant les termes et modalités de publication du pourcentage de cycles, y compris à pédalage assisté, ou de véhicules à moteur à deux ou trois roues à très faibles émissions parmi les véhicules mis en relation par les plateformes visées à l'article L. 224-11-1 du code de l'environnement](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045590767)
 
-Ce dépôt est configuré pour utiliser de l'intégration continue, si vous utilisez GitHub. À chaque commit, une suite de tests sera lancée via [GitHub Actions](https://github.com/features/actions) afin de vérifier :
+## Création d'un fichier de données conforme
 
-- que votre schéma est valide à la spécification Table Schema ;
-- que vos fichiers d'exemples sont conformes au schéma.
+Les données collectées doivent respecter un formalisme particulier (schéma de données) décrit sur la section documentation de cette page.
 
-Si vous n'utilisez pas GitHub, vous pouvez lancer ces tests sur votre machine ou sur un autre service d'intégration continue comme Gitlab CI, Jenkins, Circle CI, Travis etc. Consultez la configuration utilisée dans [`.github/workflows/test.yml`](.github/workflows/test.yml).
+Les données sont à remplir au format CSV, encodage UTF-8.
 
-Localement, voici la procédure à suivre pour installer l'environnement de test et lancer les tests :
+## Utilisation d'un outil d'aide à la saisie
 
-```bash
-# Création d'un environnement virtuel en Python 3
-python3 -m venv venv
-source venv/bin/activate
+Pour faciliter le remplissage des données, Etalab met à disposition un générateur CSV conforme au schéma de données, vous permettant de remplir les différents champs demandés. Cet outil vous permet de vous assurer que les données que vous remplissez sont au bon format. Pour l'utiliser, rendez-vous sur [publier.etalab.studio](https://publier.etalab.studio), vous pourrez alors publier votre fichier à partir :
+•	d'un fichier csv déjà existant
+•	d'un formulaire (outil d’aide à la saisie) 
 
-# Installation des dépendances
-pip install -r requirements.txt
-
-# Test de la validité du schéma
-frictionless validate --type schema schema.json
-
-# Test de la conformité des fichiers d'exemples
-frictionless validate --schema schema.json exemple-valide.csv
-```
-
-## Étapes à suivre
-
-Nous détaillons ci-dessous les étapes que nous vous conseillons de suivre après avoir créé votre dépôt Git, tout en utilisant les fichiers d'exemples.
-
-- [ ] Décrire votre schéma dans le fichier `schema.json` en respectant la spécification Table Schema. Le fichier d'exemple comprend des valeurs d'exemples pour toutes les métadonnées possibles. Notez que les champs d'exemple ne comprennent qu'une petite partie des types, formats et contraintes disponibles, référez-vous à [la documentation](https://specs.frictionlessdata.io/table-schema/#types-and-formats) pour toutes les valeurs possibles. Si certaines métadonnées ne sont pas nécessaires pour votre projet, vous pouvez les supprimer. Pour vérifier que votre schéma est conforme, vous pouvez utiliser l'outil [tableschema](https://pypi.org/project/tableschema/) en ligne de commande : `tableschema validate schema.json`
-- [ ] Modifier le fichier d'exemple CSV avec des données conforme à votre schéma. L'outil [frictionless](https://pypi.org/project/frictionless/) permet de vérifier que vos fichiers sont conformes au schéma en ligne de commande `frictionless validate --schema schema.json exemple-valide.csv`
-- [ ] Modifier le fichier [`CHANGELOG.md`](CHANGELOG.md) pour indiquer la publication initiale
-- [ ] Modifier le fichier [`README.md`](README.md), en supprimant tout son contenu tout d'abord. Au sein de plusieurs paragraphes, vous indiquerez le contexte, les modalités de production des données, le cadre juridique, la finalité, les cas d’usage etc. Consultez plusieurs schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour découvrir quelles informations sont pertinentes à indiquer
-- [ ] Vérifier que la licence ouverte vous convient. Si vous devez utiliser une autre licence, modifiez le fichier [`LICENSE.md`](LICENSE.md) et indiquez la licence dans le fichier [`schema.json`](schema.json), dans la clé `licenses`
-
-
-## Documentation
-
-Pour vous aider dans la construction de votre dépôt, nous vous recommandons de vous référer à :
-
-- [Le guide à destination des producteurs de schéma](https://guides.etalab.gouv.fr/producteurs-schemas/)
-- [La documentation de schema.data.gouv.fr](https://schema.data.gouv.fr)
-- [La spécification Table Schema](https://specs.frictionlessdata.io/table-schema/)
+Une fois vos données chargées ou remplies, il vous sera proposé de les publier sur data.gouv.fr.

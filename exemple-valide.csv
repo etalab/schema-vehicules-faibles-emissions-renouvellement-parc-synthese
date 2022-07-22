@@ -1,4 +1,2 @@
-id,date_creation,nom,classification
-42,2020-02-27,Brouette,"[""Classification A""]"
-44,2020-02-25,Pelle,"[""Classification A"",""Classification B"",""Classification C""]"
-45,2020-02-25,Bus,"[""Classification A"",""Classification C""]"
+sirenDeclarant,sirenCouvert,nom,type_entreprise,naf,cj,pcentLDVFE,pcentLDVTFE,pcentLDVclean,pcent23RMTFE,pcent23RTFE
+130025245,130025245,LoueurXY,Location,47.72B,5710,12.2,11,14.5,25.2,16.2
