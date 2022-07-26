@@ -21,13 +21,13 @@ Afin de réaliser un suivi national, l’article L. 224-12 du code de l’enviro
 
 ## Création d'un fichier de données conforme
 
-Les données collectées doivent respecter un formalisme particulier (schéma de données) décrit sur la section documentation de cette page.
+Les données collectées doivent respecter un formalisme particulier (schéma de données) décrit [sur la section documentation de cette page](https://schema.data.gouv.fr/etalab/schema-vehicules-faibles-emissions-renouvellement-parc-synthese/latest/documentation.html).
 
 Les données sont à remplir au format CSV, encodage UTF-8.
 
 ## Utilisation d'un outil d'aide à la saisie
 
-Pour faciliter le remplissage des données, Etalab met à disposition un générateur CSV conforme au schéma de données, vous permettant de remplir les différents champs demandés. Cet outil vous permet de vous assurer que les données que vous remplissez sont au bon format. Pour l'utiliser, rendez-vous sur [publier.etalab.studio](https://publier.etalab.studio), vous pourrez alors publier votre fichier à partir :
+Pour faciliter le remplissage des données, Etalab met à disposition un générateur CSV conforme au schéma de données, vous permettant de remplir les différents champs demandés. Cet outil vous permet de vous assurer que les données que vous remplissez sont au bon format. Pour l'utiliser, rendez-vous sur [publier.etalab.studio](https://publier.etalab.studio/select?schema=etalab%2Fschema-vehicules-faibles-emissions-renouvellement-parc-synthese), vous pourrez alors publier votre fichier à partir :
 - d'un fichier csv déjà existant
 - d'un formulaire (outil d’aide à la saisie) 
 
