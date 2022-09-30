@@ -121,8 +121,8 @@
       },
       {
          "name":"type_entreprise",
-         "description":"Le type d'entreprise de la personne morale déclarante",
-         "example":"Location",
+         "description":"Le type d'entreprise de la personne morale déclarante. Choixir parmi les valeurs suivantes : 'Location, Location-Vente et/ou Crédit-bail de véhicules' ; 'Plateforme de livraisons' ou 'Centrale de réservation de taxi ou de VTC'",
+         "example":"Location, Location-Vente et/ou Crédit-bail de véhicules",
          "type":"string",
          "constraints":{
              "required":true,
