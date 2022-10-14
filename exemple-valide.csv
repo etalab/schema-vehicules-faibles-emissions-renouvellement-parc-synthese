@@ -1,2 +1,2 @@
-sirenDeclarant,sirenCouvert,nom,type_entreprise,naf,cj,pcentLDVFE,pcentLDVTFE,pcentLDVclean,pcent23RMTFE,pcent23RTFE
-130025245,130025245,LoueurXY,"Location, Location-Vente et/ou Crédit-bail de véhicules",47.72B,5710,12.2,11,14.5,25.2,16.2
+sirenDeclarant,sirenCouvert,nom,type_entreprise,naf,cj,annee,pcentLDVFE,pcentLDVTFE,pcentLDVclean,pcent23RMTFE,pcent23RTFE
+130025245,130025245,LoueurXY,"Location, Location-Vente et/ou Crédit-bail de véhicules",47.72B,5710,2021,12.2,11,14.5,25.2,16.2
