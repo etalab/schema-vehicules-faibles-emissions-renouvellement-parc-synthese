@@ -14,7 +14,7 @@
    ],
    "countryCode":"FR",
    "homepage":"https://github.com/etalab/schema-vehicules-faibles-emissions-renouvellement-parc-synthese",
-   "path":"https://github.com/geoffreyaldebert/schema-vehicules-faibles-emissions-renouvellement-parc-synthese/raw/v0.0.1/schema.json",
+   "path":"https://github.com/geoffreyaldebert/schema-vehicules-faibles-emissions-renouvellement-parc-synthese/raw/v0.0.2/schema.json",
    "image":"",
    "licenses":[
       {
@@ -27,7 +27,7 @@
       {
          "title":"Fichier valide (CSV)",
          "name":"exemple-valide-csv",
-         "path":"https://github.com/geoffreyaldebert/schema-vehicules-faibles-emissions-renouvellement-parc-synthese/raw/v0.0.1/exemple-valide.csv"
+         "path":"https://github.com/geoffreyaldebert/schema-vehicules-faibles-emissions-renouvellement-parc-synthese/raw/v0.0.2/exemple-valide.csv"
       }
    ],
    "sources":[
@@ -61,8 +61,8 @@
       }
    ],
    "created":"2022-07-22",
-   "lastModified":"2022-07-22",
-   "version":"0.0.1",
+   "lastModified":"2022-10-14",
+   "version":"0.0.2",
    "contributors":[
       {
          "title":"Geoffrey Aldebert",
@@ -150,6 +150,15 @@
          "constraints": {
             "required": false,
             "pattern": "^\\d{4}$"
+         }
+      },
+      {
+         "name": "annee",
+         "description": "Année concernée par les données rapportées.",
+         "example": "2021",
+         "type": "year",
+         "constraints": {
+            "required": true
          }
       },
       {
