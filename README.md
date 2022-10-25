@@ -31,3 +31,5 @@ Pour faciliter le remplissage des données, Etalab met à disposition un génér
 - d'un fichier csv déjà existant
 
 Une fois vos données chargées ou remplies, un formulaire vous proposera de les publier sur data.gouv.fr.
+
+Merci de bien passer par [publier.etalab.studio](https://publier.etalab.studio/select?schema=etalab%2Fschema-vehicules-faibles-emissions-renouvellement-parc-synthese) pour publier vos données, afin qu'elles ne se soient pas dispersées pas dans data.gouv.fr.
